@@ -141,17 +141,7 @@ unknown = []
 system = platform.system()
 
 
-def zero_fix(s):
-    # 统一补0
-    if not s:
-        return s
-    # 删0
-    s = s.lstrip('0')
-    # 补0
-    s = s.zfill(2)
-    if '.' in s and s.index('.') == 1:
-        s = '0' + s
-    return s
+get_file_name_ext
 
 
 def get_season(parent_folder_name):

@@ -4,7 +4,7 @@ import shutil
 import telebot
 from telebot import apihelper
 
-bot = telebot.TeleBot("2052161417:AAECALWjkJtRjkjW7AztQY34VCf2yd0VAd0", parse_mode=None)#推送消息用
+bot = telebot.TeleBot("2052161417:AAECALXXXXXXXY34VCf2yd0VAd0", parse_mode=None)#推送消息用
 apihelper.proxy = {'https':'socks5://127.0.0.1:8089'}
 
 def fuzzyfinder(user_input, collection):
