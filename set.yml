@@ -1,0 +1,4 @@
+in_dir: "" #输入的目录
+out_dir: "" #输出的目录
+tele_msg: False #Telegram 消息推送
+tele_bot: "xxxxx:xxxxx" #Telegram Bot Token

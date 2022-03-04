@@ -2,7 +2,10 @@ import re
 import os
 import shutil
 import telebot
-bot = telebot.TeleBot("#", parse_mode=None)#推送消息用
+from telebot import apihelper
+
+bot = telebot.TeleBot("2052161417:AAECALWjkJtRjkjW7AztQY34VCf2yd0VAd0", parse_mode=None)#推送消息用
+apihelper.proxy = {'https':'socks5://127.0.0.1:8089'}
 
 def fuzzyfinder(user_input, collection):
     suggestions = []
@@ -17,9 +20,9 @@ def fuzzyfinder(user_input, collection):
     else:
         return False
 
-oklist = os.listdir("/onedrive/Bangumi")
+oklist = os.listdir("./onedrive/Bangumi")
 
-dirlist = os.listdir("/onedrive/tmp")
+dirlist = os.listdir("./onedrive/tmp")
 
 def fil():
     for i in range(0,len(oklist)):
@@ -28,7 +31,7 @@ def fil():
             for b in range(0,len(listfil)):
                 try:
                     text = bot.send_message("@Gu_Fan","开始分类【"+listfil[b]+"】到【"+oklist[i]+"】文件夹中")
-                    shutil.move("/onedrive/tmp/"+listfil[b],"/onedrive/Bangumi/"+oklist[i]+"/Season 1")
+                    shutil.move("./onedrive/tmp/"+listfil[b],"./onedrive/Bangumi/"+oklist[i]+"./Season 1")
                     bot.reply_to(text, "【"+listfil[b]+"】分类完成!")
                     #mvfillname = "/onedrive/tmp/"+listfil[b]
                     #okdir = "/onedrive/Bangumi/"+oklist[i]+"/Season 1"
