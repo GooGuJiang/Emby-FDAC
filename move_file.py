@@ -55,4 +55,8 @@ for name_list in up_fan_list_json:
 		
 
 time.sleep(10)
+<<<<<<< HEAD
 os.system('python3 "/py/Emby-FDAC/Re_name/EpisodeReName.py" "'+up_move_out_dir+'/"')
+=======
+os.system('python3 "/py/Emby-FDAC/Re_name/EpisodeReName.py" "'+up_move_out_dir+'/"')
+>>>>>>> 11b231e3b9fac598897b671b5c6260c851ce4c7e
