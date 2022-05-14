@@ -1,10 +1,80 @@
 {
     "1":{
         "name":{
-            "name1":"你好",
-            "name2":"我的",
-            "name3":"世界"
+            "name1":"Shokei Shoujo no Virgin Road"
         },
-        "out_dir":"test"
+        "out_dir":"Shokei Shoujo no Virgin Road",
+        "season": "1"
+    },
+    "2":{
+        "name":{
+            "name1":"Paripi Koumei"
+        },
+        "out_dir":"Paripi Koumei",
+        "season":"1"
+    },
+    "3":{
+        "name":{
+            "name1":"SPYxFAMILY"
+        },
+        "out_dir":"SPYxFAMILY",
+        "season":"1"
+    },
+    "4":{
+        "name":{
+            "name1":"Machikado Mazoku"
+        },
+        "out_dir":"Machikado Mazoku",
+        "season":"2"
+    },
+    "5":{
+        "name":{
+            "name1":"RPG Fudousan"
+        },
+        "out_dir":"RPG Fudousan",
+        "season":"1"
+    },
+    "6":{
+        "name":{
+            "name1":"Otome Game Sekai wa Mob ni Kibishii Sekai desu"
+        },
+        "out_dir":"Otome Game Sekai wa Mob ni Kibishii Sekai desu",
+        "season":"1"
+    },
+    "7":{
+        "name":{
+            "name1":"Shijou Saikyou no Daimaou"
+        },
+        "out_dir":"Shijou Saikyou no Daimaou",
+        "season":"1"
+    },
+    "8":{
+        "name":{
+            "name1":"Aharen-san wa Hakarenai"
+        },
+        "out_dir":"Aharen-san wa Hakarenai",
+        "season":"1"
+    },
+    "9":{
+        "name":{
+            "name1":"Yuusha, Yamemasu"
+        },
+        "out_dir":"Yuusha, Yamemasu",
+        "season":"1"
+    },
+    "10":{
+        "name":{
+            "name1":"Mahoutsukai Reimeiki"
+        },
+        "out_dir":"Mahoutsukai Reimeiki",
+        "season":"1"
+    },
+    "11":{
+        "name":{
+            "name1":"Tomodachi Game"
+        },
+        "out_dir":"Tomodachi Game",
+        "season":"1"
     }
+    
 }

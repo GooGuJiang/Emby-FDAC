@@ -1,5 +1,5 @@
-in_dir: "./onedrive/tmp" # 输入的目录
-out_dir: "./onedrive/Bangumi" # 输出的目录
+in_dir: "/gu/video/tmp" # 输入的目录
+out_dir: "/gu/video/Bangumi" # 输出的目录
 tele_msg: False #Telegram 消息推送 
-tele_bot: "xxxxx:xxxxx" #Telegram Bot Token
-tele_out: "@Gu_Fan" # Telegram 消息推送地址
+tele_bot: " " #Telegram Bot Token
+tele_out: " " # Telegram 消息推送地址
