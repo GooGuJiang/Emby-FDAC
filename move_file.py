@@ -4,6 +4,7 @@ import shutil
 import yaml
 import json
 from loguru import logger
+import time
 
 def fuzzyfinder(user_input, collection): # 模糊搜索
     suggestions = []
@@ -42,7 +43,16 @@ for name_list in up_fan_list_json:
         #print(see_file_name)
         logger.info("移动: "+see_file_name[0]+"->"+up_fan_list_json[name_list]["out_dir"])
         logger.info(up_input_dir+"/"+see_file_name[0]+" 移动到 "+up_fan_list_json[name_list]["out_dir"])
-        shutil.move(up_input_dir+"/"+see_file_name[0],up_move_out_dir+"/"+up_fan_list_json[name_list]["out_dir"])
+        if os.path.isdir(up_move_out_dir+"/"+up_fan_list_json[name_list]["out_dir"]) is False:
+            os.mkdir(up_move_out_dir+"/"+up_fan_list_json[name_list]["out_dir"])
+        if os.path.isdir(up_move_out_dir+"/"+up_fan_list_json[name_list]["out_dir"]+"/Season "+up_fan_list_json[name_list]["season"]) is False:
+            os.mkdir(up_move_out_dir+"/"+up_fan_list_json[name_list]["out_dir"]+"/Season "+up_fan_list_json[name_list]["season"])
+        shutil.move(up_input_dir+"/"+see_file_name[0],up_move_out_dir+"/"+up_fan_list_json[name_list]["out_dir"]+"/Season "+up_fan_list_json[name_list]["season"])
         logger.info("运行重命名脚本")
-        os.system("python3 './Re_name/EpisodeReName.py' "+up_move_out_dir+"/"+up_fan_list_json[name_list]["out_dir"])
+        time.sleep(10)
+        os.system('python3 "/py/Emby-FDAC/Re_name/EpisodeReName.py" "'+up_move_out_dir+'/'+up_fan_list_json[name_list]["out_dir"]+'"')
         logger.info("文件 "+see_file_name[0]+" 移动完成")
+		
+
+time.sleep(10)
+os.system('python3 "/py/Emby-FDAC/Re_name/EpisodeReName.py" "'+up_move_out_dir+'/"')
